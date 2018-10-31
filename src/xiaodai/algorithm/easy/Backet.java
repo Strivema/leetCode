@@ -5,6 +5,8 @@ package xiaodai.algorithm.easy;
  * @date 2018/10/25 11:52 AM
  **/
 public class Backet {
+
+    //背包问题
     public static int backet(int []value,int []weight,int maxWeight){
 
 
