@@ -5,6 +5,7 @@ package xiaodai.algorithm.easy.tree;
  * @date 2018/10/31 8:24 PM
  **/
 public class SortArrayToBST {
+    //以最中间的作为根，然后以左半部分的中做根的左儿子，右半部分的中做右儿子
     public TreeNode sortArrayTpBST(int []nums){
         if(nums==null||nums.length<=0){
             return null;
