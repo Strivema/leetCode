@@ -5,9 +5,9 @@ package xiaodai.algorithm.easy.list;
  * @date 2018/10/30 4:44 PM
  **/
 public class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x){
+    public int val;
+    public ListNode next;
+    public ListNode(int x){
         val = x;
     }
 
