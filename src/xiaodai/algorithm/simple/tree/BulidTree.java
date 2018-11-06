@@ -21,7 +21,7 @@ public class BulidTree {
             return root;
         }
         int inroot = inst;
-        while (inorder[inroot]!=rootval&&inroot<inend){
+        while (inorder[inroot]!=rootval&&inroot<=inend){
             inroot++;
         }
         // 左子树的长度
@@ -29,10 +29,11 @@ public class BulidTree {
         int pre  =prest+length;
 
         if(length>0){
-            root.left = bulid(preorder,prest+1,pre,inorder,inst,inst);
+            root.left = bulid(preorder,prest+1,pre,inorder,inst,inroot-1);
         }
         if(length<prend-prest){
-            root.right = bulid(preorder,pre+1,prend,inorder,inroot+1,inst);
+            // 修改
+            root.right = bulid(preorder,pre+1,prend,inorder,inroot+1,inend);
         }
         return root;
 
