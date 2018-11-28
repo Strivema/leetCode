@@ -44,8 +44,8 @@ public class CanJump {
     }
 
     public static void main(String[] args) {
-        int nums[] = {3,2,1,0,4};
-        System.out.println( new CanJump().canJump(nums));
+        int nums[] = {3, 2, 1, 0, 4};
+        System.out.println(new CanJump().canJump(nums));
         System.out.println(new CanJump().canJumpDP(nums));
     }
 
